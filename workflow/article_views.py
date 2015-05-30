@@ -14,7 +14,7 @@ class ArticleDetailView(DetailView):
 
 class ArticleCreateView(CreateView):
     model = Article
-    fields = ['title', 'content', 'section']
+    fields = ['title', 'content', 'section','location']
     template_name = 'articles/new_article.html'
     success_url = reverse_lazy('latest_article')
 
