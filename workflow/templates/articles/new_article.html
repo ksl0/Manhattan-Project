@@ -25,7 +25,9 @@
     </form>
 {% endblock %}
 {% block additional_scripts_block %}
-    <script src="{% static 'ckeditor/ckeditor.js' %}"></script>
+    <script src="{% static 'geoposition/geoposition.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'geoposition/geoposition.css' %}">
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>
     <script>
         CKEDITOR.replace(id_content, {
             customConfig: '{% static 'ckeditor_config.js' %}'

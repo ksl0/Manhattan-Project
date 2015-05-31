@@ -156,3 +156,12 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'claremont_academia@yahoo.com'
 EMAIL_HOST_PASSWORD = '794613852'
 DEFAULT_FROM_EMAIL = 'claremont_academia@yahoo.com'
+
+## For geopositioning
+GEOPOSITION_MAP_OPTIONS = {
+    'minZoom': 3,
+    'maxZoom': 21,
+    'zoom': 15,
+    'center': {'lat': 34.1029669, 'lng': -117.7126644}
+}
+
